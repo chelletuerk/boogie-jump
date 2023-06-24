@@ -1,0 +1,101 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* html {
+    background-image: url('images/grass.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding-bottom: -20%;
+    height: 100vh;
+    width: 100vw;
+} */
+
+/* container [
+  border: 1px solid #000;
+] */
+
+body {
+  /* background-image: url('images/grass.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  padding-bottom: -20%;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} 
+
+.world {
+  overflow: hidden;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  height: 40vh;
+  width: 100vw;
+}
+
+.score {
+  position: absolute;
+  font-size: 3vmin;
+  right: 1vmin;
+  top: 1vmin;
+}
+
+.start-screen {
+  position: absolute;
+  font-size: 5vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.hide {
+  display: none;
+}
+
+.ground {
+  --left: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: calc(var(--left) * 1%)
+}
+
+.boog {
+  --bottom: 26;
+  --left: 1;
+  position: absolute;
+  /* position: relative; */
+  left: 1%;
+  bottom: 0%;
+  height: 50%;
+  /* bottom: calc(var(--bottom) * 1%); */
+  /* left: calc(var(--left) * 1%); */
+}
+\
+
+
+--bottom: 26;
+--left: 1;
+position: absolute;
+position: relative;
+left: 1%;
+bottom: 30%;
+height: 30%;
+
+.daisy {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 30%;
+  bottom: 30;
+}
